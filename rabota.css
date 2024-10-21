@@ -1,0 +1,83 @@
+@font-face { 
+  font-family: "Regu-lar"; 
+  src: url(./fonts/Raleway-Regular.woff); 
+  src: url(./fonts/Raleway-Regular.woff2); 
+} 
+ 
+*, 
+*::before, 
+*::after { 
+    box-sizing: border-box; 
+} 
+ 
+html { 
+  height: 100%; 
+} 
+ 
+body{ 
+  display: flex; 
+  height: 100%; 
+  object-fit: cover;
+  position: relative; 
+  margin: 0 0; 
+} 
+ 
+video { 
+  position: absolute; 
+  object-position: center;
+  width: 100vw; 
+  height: 100vh; 
+  object-fit: cover; 
+  min-width: 700px;
+  min-height: 400px;
+} 
+ 
+.h1{     
+  color: black;  
+  z-index: 1;  
+  width: 740px;  
+  height: 410px;  
+  font-size: 110px;
+  text-align: center;  
+  margin: 50px auto;  
+  font-family: "Rale-bolt"; 
+} 
+
+.h1::after { 
+  content: '*'; 
+} 
+
+.h1:hover + .video {  
+  background-color: white; 
+  opacity: 0.8; 
+} 
+
+h1:hover{ 
+  color: #534d4d; 
+} 
+     
+.h1:hover::before{ 
+  content: 'На самом деле нет.\AВажнее &mdash; научиться ошибаться.'; 
+  white-space: pre; 
+  position: absolute; 
+  width: 500px; 
+  height: 80px; 
+  font-family: "Regu-lar"; 
+  font-size: 17px; 
+  right: 200px; 
+  top: 160px; 
+  border: 2px solid black; 
+  background-color: white; 
+  border-radius: 20px 20px; 
+  box-shadow: 0 10px 0 black; 
+  text-align: left; 
+  padding: 10px 20px 50px 20px; 
+  color: black;
+} 
+ 
+     
+@font-face { 
+  font-family: "Rale-bolt"; 
+  src: url(./fonts/Raleway-ExtraBold.woff); 
+  src: url(./fonts/Raleway-ExtraBold.woff2); 
+}
